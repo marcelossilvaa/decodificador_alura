@@ -20,6 +20,7 @@
 }
 
 .btntitulo{
+    text-transform: uppercase;
     color: white;
     font-size: 18px;
     width: 100px;
@@ -65,15 +66,15 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.btn{
+.botoes{
     display: flex;
     align-items: center;
 }
-.btn :hover{
+.botoes :hover{
         background-color: #1a2a3a;
         color: #ffffff;
 }
-.btnmenu{
+.btn{
     color: #1a2a3a;
     background-color: #ffffff;
     font-size: 15px;
