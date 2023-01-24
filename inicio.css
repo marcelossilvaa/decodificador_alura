@@ -222,6 +222,10 @@ html, body{
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .barra{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     .texto2{
         width: 400px;
         height: 300px;
@@ -234,16 +238,12 @@ html, body{
         width: 150px;
     }
     .btntitulo{
-        font-size: 15px;
-        width: 60px;
+        font-size: 18px;
     }
 }
 @media (max-width: 480px){
     .logo1{
         width: 200px;
-    }
-    .btntitulo{
-        width: 40px;
     }
     .texto2{
         width: 300px;
@@ -268,10 +268,7 @@ html, body{
         width: 270px;
     }
     .logo1{
-        width: 170px;
-    }
-    .btntitulo{
-        font-size: 13px;
+        width: 200px;
     }
     .divmenu{
         margin: 0px;

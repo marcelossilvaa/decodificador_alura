@@ -42,6 +42,42 @@
 .divbotoes :hover{
     border-bottom: 2px solid #ffffff;
 }
+/* Menu --------------------------------*/
+.menu{
+    color: #ffffff;
+    height: 380px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Logos/pexels-pixabay-270348.jpg");
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.fotoperfil{
+    height: 160px;
+}
+.titulo{
+    text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+    padding: 8px;
+}
+.contatos{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.logomarca{
+    margin: 5px;
+    width: 60px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
 
 
 
@@ -58,8 +94,43 @@
     width: 100%;
     height: 60px;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    
+}
 
+
+
+@media (max-width: 730px){
+    .menu{
+        font-size: 13px;
+    }
+    .barra{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .btntitulo{
+        font-size: 20px;
+    }
+    .contatos{
+        font-size: 13px;
+    }
+}
+@media (max-width: 570px){
+    .menu{
+        font-size: 10px;
+    }
+    .barra{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .btntitulo{
+        font-size: 20px;
+    }
+    .contatos{
+        font-size: 13px;
+    }
+
+}
+@media (max-width: 400px){
+    .barra{
+        padding: 5px 20px;
+    }
 }
