@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
-    <title>Decodificador de Textoo</title>
+    <title>Decodificador de Texto</title>
 </head>
 <body>
     <header class="barra">
         <a href="index.html" class=""><img src="LogoDecodificador.png" alt="img-1" class="logo1"></a>
-        <div class="divbotoes">
+        <div class="botoesbarra">
             <a href="index.html"><button class="btntitulo">Home</button></a>
             <a href="contato.html"><button class="btntitulo">Contato</button></a>
             <a href="l1nq.com/ksZnB"><button class="btntitulo">Sobre</button></a>
@@ -18,13 +18,12 @@
     </header>
 
     <main class="section">
-            <div class="divmenu">
-                <div>
-                    <textarea name="texto1" id="txt1" cols="60" rows="8" placeholder="DIGITE SEU TEXTO" class="texto1"></textarea>
+            <div>
+                <div class="divmenu">
+                    <textarea name="texto1" id="txt1" cols="60" rows="10" placeholder="Digite aqui seu texto" class="texto1"></textarea>
                     <dd class="descricao">⚠ Apenas letras minúsculas e sem acento.</dd>
                 </div>
-                
-                <div class="botoes">
+                <div class="botoesmenu">
                     <button class="btn" onclick="btnEncriptar()">Criptografar</button>
                     <button class="btn" onclick="btnDesencriptar()">Descriptografar</button>
                 </div>
@@ -39,7 +38,11 @@
             </div>
     </main>
     <footer class="footer">
-        By MarceloSS em parceria com Alura + Oracle
+        <div class="footer-descricao">
+            <img src="LogoDecodificador.png" alt="" class="logo-footer">
+            <p class="footer-descricao-dados">By MarceloSS em parceria com Alura + Oracle</p> 
+            <p class="footer-descricao-dados">© Copyright - 2023</p>
+        </div>
     </footer>
 
 

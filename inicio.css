@@ -4,21 +4,26 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-html, body{
-    height: 100%;
+body {
+    background-image: url(./Logos/section-background.jpg);
+    background-size: 100%;
+    width: 100%;
 }
 
 /* Título ---------------*/
 .barra{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
     color: rgb(255, 255, 255);
-    background-color: #1a2a3a;
     display: flex;    
     align-items:center;    
     justify-content:space-between ;
     padding: 10px 40px; 
 }
 .logo1{
-    width: 350px;
+    width: 400px;
 }
 
 .btntitulo{
@@ -35,108 +40,123 @@ html, body{
     transition: 0.4s;
 }
 
-.divbotoes{
+.botoesbarra{
     display: flex;
     gap: 40px;
-
 }
 
-.divbotoes :hover{
+.botoesbarra :hover{
     border-bottom: 2px solid #ffffff;
 }
 
-
-
 /* Seção -----------------------------------------------------------------------------------*/
-/* Menu 1 --------------------------------*/
 .section{
     position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 500px;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 2.5rem;
-}
-
-.divmenu{
-    position:relative;
-    margin: 35px;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
+    width: 940px;
+    height: 820px;
+    margin: 0 auto;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 30px;
 
 
-    transition: 0.5s;
-    cursor: pointer;
 }
-.botoes{
+/* Menu 1 --------------------------------*/
+.divmenu{
+    width: 60%;
+}
+.botoesmenu{
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
-.botoes :hover{
-        background-color: #1a2a3a;
-        color: #ffffff;
+
+.botoesmenu :hover{
+    background-color: #1a2a3a;
+    border-color: #1a2a3a;
+    font-size: 17px;
 }
+.botoesmenu :active{
+    background-color: transparent;
+    border-color: #dddada;
+}
+
 .btn{
-    color: #1a2a3a;
-    background-color: #ffffff;
+    align-items: center;
+    color: #ffffff;
+    background-color: transparent;
     font-size: 15px;
-    margin: 20px;
+    margin: 20px 30px;
     height: 40px;
     width: 200px;
     border-radius: 10px;
-    border-color: #1a2a3a;
+    border-color: #ffffff;
     cursor: pointer;
-
 }
 
 .descricao{
+    color: #ffffff;
     font-size: 12px;
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 /* Menu 2 --------------------------------*/
 .divmenu2{
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
+    
 }
 
 .btncopiar{
-    color: #1a2a3a;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
     font-size: 15px;
     height: 40px;
     width: 200px;
     border-radius: 10px;
-    border-color: #1a2a3a;
+    border-color: #ffffff;
     cursor: pointer;
 }
 
 .btncopiaracao :hover{
     background-color: #1a2a3a;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+    border-color: #1a2a3a;
+    font-size: 17px;
+    
+}
+.btncopiaracao :active{
+    background-color: transparent;
+    border-color: #dddada;
+
 }
 
 /* TextosArea --------------------------------*/
 .texto1{
+    color: #ffffff;
+    font-weight: bold;
     font-size: 18px;
     padding: 30px;
     margin: 30px;
     border-radius: 10px;
     resize:none;
+    background-color: transparent;
+}
+.texto1 :hover{
+
 }
 .texto2{
+    color: #ffffff;
     font-size: 18px;
+        font-weight: bold;
     padding: 30px;
     margin: 30px;
     border-radius: 10px;
     resize:none;
-    background-color: #dddada;
+    background-color: #1a2a3a;
     box-shadow: 10px 10px 10px  rgb(51, 51, 51);
 
     
@@ -146,59 +166,59 @@ html, body{
     font-size: 13px;
     color: white;
     background-color: #1a2a3a;
-    display: flex;    
-    align-items:center;    
 
     padding: 0px 40px;
     width: 100%;
-    height: 2.5rem;
+    height: auto;
     position: absolute;
+}
+.footer-descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer-descricao-dados{
+    padding: 10px;
 }
 
 
 
 /*----------------------------------------- RESPONSIVIDADE */
-@media (min-width: 1800px){
 
-}
-
-@media (min-width: 1500px){
-    .texto1{
-        width: 800px;
+@media (min-width: 1250px){
+    .barra{
+        width: 1200px;
+    }
+    .section{
+        width: 1200px;
     }
 }
 
 @media (max-width: 1250px){
+    .section{
+        height: 600px;
+    }
     .texto1{
         width: 500px;
     }
-}
-
-@media (max-width: 1150px){
-    .section{
-        grid-template-columns: 1fr 400px;
-    }
-    .texto1{
-        width: 400px;
-    }
-    .texto2{
-        width: 300px;
-    }
-}
-
-@media (max-width: 1100px){
-    .section{
-        grid-template-columns: 1fr 350px;
-    }
     .texto2{
         width: 300px;
     }
 
 }
-
 @media (max-width: 925px){
-    .divmenu{
-        margin: 10px;
+    .barra{
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
     .logo1{
         width: 250px;
@@ -207,54 +227,56 @@ html, body{
         width: 130px;
     }
     .texto2{
-        width: 250px;
+        width: 400px;
     }
     .texto1{
-        width: 300px;
+        width: 400px;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+    .logo-footer{
+        width: 400px;
     }
 }
 
 @media (max-width: 730px){
-    .section{
-        grid-template-columns:500px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .barra{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
     .texto2{
         width: 400px;
         height: 300px;
     }
     .texto1{
+        height: 300px;
         width: 400px;
     }
 
     .btn{
         width: 150px;
     }
-    .btntitulo{
-        font-size: 18px;
-    }
 }
+
 @media (max-width: 480px){
     .logo1{
         width: 200px;
     }
+    .botoesbarra{
+        gap: 20px;
+    }
     .texto2{
         width: 300px;
-        height: 300px;
     }
     .texto1{
         width: 300px;
     }
     .btn{
-        width: 120px;
+        margin: 10px;
+        font-size: small;
+        width: 100px;
     }
+    .logo-footer{
+        width: 300px;
+    }
+
 }
 
 @media (max-width: 400px){
@@ -277,5 +299,8 @@ html, body{
     .divmenu2{
         margin: 0px;
         padding: 0px;
+    }
+    .logo-footer{
+        width: 200px;
     }
 }
