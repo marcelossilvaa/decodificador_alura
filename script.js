@@ -1,35 +1,54 @@
+const textArea = document.querySelector('.texto1');
+const mensagem = document.querySelector('.texto2');
 
+// As "chaves" de criptografia que utilizaremos são:
+// A letra "e" é convertida para "enter"
+// A letra "i" é convertida para "imes"
+// A letra "a" é convertida para "ai"
+// A letra "o" é convertida para "ober"
+// A letra "u" é convertida para "ufat"
 
-function crip(){
-    var txt1 = document.getElementById('txt1').value
-    var texto2 = document.getElementById('txt2')
-
-
-    txt1 = txt1.replace((/e/g) (/a/g) , "enter", "ai");
-    var resultado = txt1.replace((/\/e/g) (/\/a/g), "enter", "ai");
-    alert(`${resultado}`)
-
-
-
+function btnEncriptar() {
+    const textoEncriptado = encriptar(textArea.value)
+    mensagem.value = textoEncriptado;
+    textArea.value = "";
 }
 
+function encriptar(stringEncriptada){
 
+    let matrizCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
+    stringEncriptada = stringEncriptada.toLowerCase();
 
-
-
-function desc(){
-
+    for(let i = 0; i <matrizCodigo.length; i++) {
+        if(stringEncriptada.includes(matrizCodigo[i][0])) {
+            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
+        }
+    }
+    return stringEncriptada
 }
 
+function btnDesencriptar() {
+    const textoDesencriptado = desencriptar(textArea.value)
+    mensagem.value = textoDesencriptado;
+    textArea.value = "";
+}
 
+function desencriptar(stringDesencriptada){
 
+    let matrizCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
+    stringDesencriptada = stringDesencriptada.toLowerCase();
 
+    for(let i = 0; i <matrizCodigo.length; i++) {
+        if(stringDesencriptada.includes(matrizCodigo[i][1])) {
+            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+        }
+    }
+    return stringDesencriptada
+}
 
-
-
-
-/* A letra "e" é convertida para "enter"
-A letra "i" é convertida para "imes"
-A letra "a" é convertida para "ai"
-A letra "o" é convertida para "ober"
-A letra "u" é convertida para "ufat" */
+function copiarTexto() {
+    let textoCopiado = document.getElementById("texto2");
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+}

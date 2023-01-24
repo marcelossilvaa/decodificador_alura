@@ -24,13 +24,17 @@
                 </div>
                 
                 <div class="botoes">
-                    <button class="btn" id="btn1" onclick="crip()">Criptografar</button>
-                    <button class="btn" id="btn2" onclick="desc()">Descriptografar</button>
+                    <button class="btn" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btn" onclick="btnDesencriptar()">Descriptografar</button>
                 </div>
             </div>
             
             <div class="divmenu2">
-                    <textarea name="text2" id="txt1" cols="30" rows="15" class="texto2" readonly></textarea>
+                    <textarea cols="30" rows="15" class="texto2" id="texto2" readonly placeholder="Nenhuma mensagem encontrada..."></textarea>
+                    <div class="btncopiaracao">
+                        <button class="btncopiar" onclick="copiarTexto()">Copiar texto</button>
+                    </div>
+                    
             </div>
     </main>
     <footer class="footer">
