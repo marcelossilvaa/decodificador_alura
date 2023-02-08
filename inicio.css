@@ -5,12 +5,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    background-image: url(./Logos/section-background.jpg);
+    background-color: #cfcfcf;
     background-size: 100%;
     width: 100%;
 }
 
 /* Título ---------------*/
+
+.barra-principal{
+    width: 100%;
+    background: #1a2a3a
+}
 .barra{
     position: relative;
     width: 940px;
@@ -20,7 +25,8 @@ body {
     display: flex;    
     align-items:center;    
     justify-content:space-between ;
-    padding: 10px 40px; 
+    padding: 10px 40px;
+    
 }
 .logo1{
     width: 400px;
@@ -58,8 +64,6 @@ body {
     box-sizing: border-box;
     display: flex;
     margin-top: 30px;
-
-
 }
 /* Menu 1 --------------------------------*/
 .divmenu{
@@ -69,12 +73,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .botoesmenu :hover{
+    color: white;
     background-color: #1a2a3a;
-    border-color: #1a2a3a;
     font-size: 17px;
 }
 .botoesmenu :active{
@@ -84,19 +87,19 @@ body {
 
 .btn{
     align-items: center;
-    color: #ffffff;
+    color: #1a2a3a;
     background-color: transparent;
     font-size: 15px;
     margin: 20px 30px;
     height: 40px;
     width: 200px;
     border-radius: 10px;
-    border-color: #ffffff;
+    border-color: #1a2a3a;
     cursor: pointer;
 }
 
 .descricao{
-    color: #ffffff;
+    color: #1a2a3a;
     font-size: 12px;
     margin-left: 40px;
 }
@@ -109,44 +112,20 @@ body {
     width: 40%;
     
 }
-
-.btncopiar{
-    color: #ffffff;
-    background-color: transparent;
-    font-size: 15px;
-    height: 40px;
-    width: 200px;
-    border-radius: 10px;
-    border-color: #ffffff;
-    cursor: pointer;
-}
-
-.btncopiaracao :hover{
-    background-color: #1a2a3a;
-    color: rgb(255, 255, 255);
-    border-color: #1a2a3a;
-    font-size: 17px;
-    
-}
-.btncopiaracao :active{
-    background-color: transparent;
-    border-color: #dddada;
-
-}
-
 /* TextosArea --------------------------------*/
 .texto1{
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     font-size: 18px;
     padding: 30px;
     margin: 30px;
     border-radius: 10px;
+    border-color: transparent;
     resize:none;
     background-color: transparent;
 }
-.texto1 :hover{
-
+.texto1 :active{
+    border-color: transparent;
 }
 .texto2{
     color: #ffffff;

@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
+    <link rel="icon" href="./Logos/LogoDecodificadorABA.png">
     <title>Decodificador de Texto</title>
 </head>
 <body>
-    <header class="barra">
-        <a href="index.html" class=""><img src="LogoDecodificador.png" alt="img-1" class="logo1"></a>
-        <div class="botoesbarra">
-            <a href="index.html"><button class="btntitulo">Home</button></a>
-            <a href="contato.html"><button class="btntitulo">Contato</button></a>
-            <a href="l1nq.com/ksZnB"><button class="btntitulo">Sobre</button></a>
+    <header class="barra-principal">
+        <div class="barra">
+            <a href="index.html" class=""><img src="LogoDecodificador.png" alt="img-1" class="logo1"></a>
+            <div class="botoesbarra">
+                <a href="index.html"><button class="btntitulo">Home</button></a>
+                <a href="contato.html"><button class="btntitulo">Contato</button></a>
+                <a href="https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript" target="_blank"><button class="btntitulo" >Sobre</button></a>
+            </div>
         </div>
     </header>
 
     <main class="section">
             <div>
                 <div class="divmenu">
-                    <textarea name="texto1" id="txt1" cols="60" rows="10" placeholder="Digite aqui seu texto" class="texto1"></textarea>
+                    <textarea name="texto1" id="txt1" cols="60" rows="14" placeholder="Digite aqui seu texto" class="texto1"></textarea>
                     <dd class="descricao">⚠ Apenas letras minúsculas e sem acento.</dd>
                 </div>
                 <div class="botoesmenu">
@@ -31,8 +34,8 @@
             
             <div class="divmenu2">
                     <textarea cols="30" rows="15" class="texto2" id="texto2" readonly placeholder="Nenhuma mensagem encontrada..."></textarea>
-                    <div class="btncopiaracao">
-                        <button class="btncopiar" onclick="copiarTexto()">Copiar texto</button>
+                    <div class="botoesmenu">
+                        <button class="btn" onclick="copiarTexto()">Copiar texto</button>
                     </div>
                     
             </div>

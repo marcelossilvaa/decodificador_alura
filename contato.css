@@ -5,12 +5,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    background-image: url(./Logos/section-background.jpg);
+    background-color: #cfcfcf;
     background-size: 100%;
     width: 100%;
 }
 
 /* Título ---------------*/
+
+.barra-principal{
+    width: 100%;
+    background: #1a2a3a
+}
 .barra{
     position: relative;
     width: 940px;
@@ -20,10 +25,11 @@ body {
     display: flex;    
     align-items:center;    
     justify-content:space-between ;
-    padding: 10px 40px; 
+    padding: 10px 40px;
+    
 }
 .logo1{
-    width: 350px;
+    width: 400px;
 }
 
 .btntitulo{
@@ -40,12 +46,12 @@ body {
     transition: 0.4s;
 }
 
-.divbotoes{
+.botoesbarra{
     display: flex;
     gap: 40px;
 }
 
-.divbotoes :hover{
+.botoesbarra :hover{
     border-bottom: 2px solid #ffffff;
 }
 /* Menu --------------------------------*/
